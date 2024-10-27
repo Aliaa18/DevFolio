@@ -1,14 +1,28 @@
                                      /*============ Home section ============*/
-      #navbar-example a{
+    #navbar-example a{
     color: white !important;
-   }                                  
+   }       
+   #navbar-example .lineUnder{
+    transition: all 1s;
+   }
+   #navbar-example a:hover + .lineUnder{
+    background-color: white;
+    width: 100%;
+    height: 1.5px;
+   }                      
 #home{
-    background: linear-gradient(#00000074,#0000009d ) ,url(./img/hero-bg.jpg) , no-repeat ,center;
-    background-size: cover;
+    background: linear-gradient(#00000074,#0000009d ) ,url(../img/hero-bg.jpg) , no-repeat ,center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+@media screen and (max){
+    
 }
 #home .container h1{
     font-size: 72px;
     font-weight: 600px;
+    text-align: center;
 }
 #home .container p{
     text-align: center;
@@ -16,7 +30,7 @@
     font-weight: 600px;
 }
                                  /*============= About Section ===============*/
-
+ 
 #about{
     background-color: #f5f5f5;
     padding-top: 70px;
@@ -63,7 +77,7 @@ left: 0%;
          /* border-radius: 50%; */
         transition: .3s;
         font-size: 25px;
-        
+        cursor:pointer
         
     }     
     .services h2{
@@ -95,9 +109,9 @@ transform: translate(-50%);
                
                    /*------------ mini section -----------*/
      .mini{
-        background: linear-gradient(#0458b8ad,#0458b8ad) , url(./img/counters-bg.jpg) ,no-repeat,center;
+        background: linear-gradient(#0458b8ad,#0458b8ad) , url(../img/post-3.jpg) ,no-repeat,center;
         background-size: cover;
-
+           background-attachment: fixed;
      }          
       .mini i{
         width: 90px;
@@ -123,6 +137,20 @@ transform: translate(-50%);
    
 #work{
     background-color: #f5f5f5;
+}
+#work .plusDiv{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#work span.plus i{
+   color: #0078ff;
+   font-size: 26px;
 }
 .work-content{
     background-color: #fff;
@@ -151,8 +179,9 @@ transform: translate(-50%);
      /* clients section  */
 .clients{
     position: relative; 
-    background: linear-gradient(#0458b83e,#0458b83e) ,url(./img/overlay-bg.jpg) , no-repeat ,center;
+    background: linear-gradient(#0458b83e,#0458b83e) ,url(../img/overlay-bg.jpg) , no-repeat ,center;
     background-size: cover;
+    background-attachment: fixed;
  }
  .clients img{
      width: 150px;
@@ -277,8 +306,9 @@ transform: translate(-50%);
 
 /* ============== contact section===============*/
  .mainly{
-background: linear-gradient(#0458b8b9,#0458b8b4) ,url(./img/overlay-bg.jpg) , no-repeat ,center;
+background: linear-gradient(#0458b8b9,#0458b8b4) ,url(../img/overlay-bg.jpg) , no-repeat ,center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .footer-paralax {
     padding: 4rem 0 0 0;
